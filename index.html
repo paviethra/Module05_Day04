@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <title>JQuery - Twitter Tags</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Please Add your Tags</h2>
+        <div class="content">
+           <div class="tags-and-input">
+               <span class="tag" data-value="your_tag">your_tag<i class="fa fa-times-circle"></i></span>
+               <input type="text" class="input" autocomplete="false">
+           </div>
+        </div>
+        <div class="errors">
+           <span class="error empty">Can not add empty Tag</span>
+           <span class="error syntax">please don't add specific characters or numbers just Alphapetical Letters ONLY.</span>
+           <span class="error underscore">Please Don't Start the tag with (_)</span>
+           <span class="error already">This tag is already added</span>
+           <span class="error max_chars">You have reach the maximum limit of characters per Tag</span>
+           <span class="error max_tags">You have reach the maximum limit of Tags</span> 
+        </div>
+
+        <div class="details">
+           <div class="char-length"><span></span> Characters Left</div>
+           <div class="tags-length"><span></span> Tags Left</div>
+        </div>
+
+        <button class="add_tags">Add Tags</button>
+        
+        <div class="results">
+            <div class="results-errors">Can't add No Tags</div>
+            <div class="array">
+              <!--   Your Results Is : [
+                <div class="result"><span class="index">1</span><span class="text">text</span></div>
+                <div class="result"><span class="index">1</span><span class="text">text</span></div>
+                <div class="result"><span class="index">1</span><span class="text">text</span></div>
+                <div class="result"><span class="index">1</span><span class="text">text</span></div>
+                <div class="result"><span class="index">1</span><span class="text">text</span></div>    
+                ] 
+                <span><i class="fas fa-plus"></i></span>
+               -->
+            </div>
+        </div>
+    </div> 
+
+    <script src="./app.js"></script>
+</body>
+</html>
